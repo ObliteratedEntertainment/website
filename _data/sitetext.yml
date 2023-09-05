@@ -1,0 +1,117 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Obliterated Entertainment 
+    text: Game With Us. 
+    button: Jolly Cooperate 
+    buttonlink: "#services"
+
+  services:
+    title: "Services"
+    text: "We have over 30 years of professional software engineering experience developing critical infrastructure to support our user's needs."
+    section: services
+    list:
+      - title: "Publishing"
+        desc: "Help with publishing to Steam and other game platforms"
+        icon: fa-brands fa-steam-symbol
+      - title: "Game Development"
+        desc: "Experience developing for both Unity and Godot. Custom C# functionality to meet your needs."
+        icon: fa fa-gamepad
+      - title: "Game Services"
+        desc: "Integrate Steam, Twitch, and custom backends to better engage your players."
+        icon: fa fa-ghost
+
+  portfolio:
+    title: "Published Products" 
+    text: ""
+    section: portfolio
+    closebutton: "Close Project"
+
+  about:
+    title: "About Us"
+    text: ""
+    body: "Passion for games and creating reliable software."
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "no" #"yes/no"
+    list:
+
+  team:
+    title: "The Team"
+    text: "Software nerds with a passion for gaming."
+    subtext: The team has been jolly cooperating together for over a decade creating a variety of software solutions, from enterprise software stacks to video game development. Total of over 30 years of professional software development experience. 
+    section: team
+    people:
+      - name: "TheObliterated"
+        role: "Software Engineer"
+        image: assets/img/team/theobliterated.jpg
+        social:
+          - url: https://steamcommunity.com/id/TheObliterated
+            icon: fa-brands fa-steam-symbol
+          - url: https://twitch.tv/theobliterated 
+            icon: fa-brands fa-twitch
+      - name: "Profour"
+        role: "Software Engineer"
+        image: assets/img/team/profour.jpg
+        social:
+          - url: https://steamcommunity.com/id/profour 
+            icon: fa-brands fa-steam-symbol
+          - url: https://twitch.tv/pro_4 
+            icon: fa-brands fa-twitch
+      - name: "Ry12ob"
+        role: "Software Engineer"
+        image: assets/img/team/ry12ob.jpg
+        social:
+          - url: https://steamcommunity.com/profiles/76561198022757163 
+            icon: fa-brands fa-steam-symbol
+          - url: https://twitch.tv/ry12ob
+            icon: fa-brands fa-twitch
+
+  contact:
+    title: "Contact Us"
+    text: ""
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    message: "Message*"
+    message-validation: ""
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://steamcommunity.com/groups/obliterated_entertainment
+        icon: "fa-brands fa-steam-symbol"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  <<: *DEFAULT_EN
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
